@@ -1,0 +1,40 @@
+{
+  "name": "my_lib",
+  "version": "1.0.0",
+  "description": "component library",
+  "main": "dist/cjs/index.tsx",
+  "module": "dist/esm/index.tsx",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "dev": "rollup -c --watch",
+    "build": "rollup -c"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/oddFEELING"
+  },
+  "keywords": [
+    "component",
+    "ui",
+    "ux",
+    "design"
+  ],
+  "author": "Emmanuel",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.2.48",
+    "rollup": "^4.9.6",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
